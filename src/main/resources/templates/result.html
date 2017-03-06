@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Results</title>
+</head>
+<body>
+	<div th:if="${palindromeModel.result}">
+		<p>Text is palindrome</p>
+	</div>
+	<div th:unless="${palindromeModel.result}">
+		<p>Text isn't palindrome</p>
+	</div>
+	<a href="/">Submit another message</a>
+</body>
+</html>

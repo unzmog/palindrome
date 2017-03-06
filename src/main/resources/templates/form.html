@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Palindrome</title>
+</head>
+<body>
+    <form action="#" th:action="@{/}" th:object="${palindrome}" method="post">
+        <p>Text (max lenth: 1500000): <input type="text" th:maxlength="1500000" th:field="*{text}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
